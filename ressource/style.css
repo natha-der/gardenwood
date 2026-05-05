@@ -77,10 +77,9 @@ nav {
 
 
 /* Zone hero */
-
 .hero {
     background-color: var(--bg);
-    padding : 50px 30px;
+    padding: 50px 30px;
     padding-top: 130px;
     position: relative;
     overflow: hidden;
@@ -88,24 +87,32 @@ nav {
 
 .hero-inner {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 2rem;
-}
-
-.hero-content {flex: 1;}
-
-.hero-image {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
 }
 
 .hero-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
+}
+
+.hero-tag {
+    background-color: var(--green-neon);
+    color: var(--green-forest);
+    padding: 0.4em 1.4em;
+    border-radius: 100px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.hero-img-1 {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 8rem;
 }
 
 .hero-bottom {
@@ -114,28 +121,17 @@ nav {
     gap: 2rem;
 }
 
-.hero-img-1 {
-    width: 180px;
-    height: auto;
-    object-fit: contain;
+.hero-content {
+    flex: 1;
 }
 
 .hero-img-2 {
     width: 45%;
-    height: 250px;
+    height: 200px;
+    width: auto;
     object-fit: cover;
     border-radius: 12px;
-}
-
-
-.hero-tag {
-    background-color: var(--green-neon);
-    color: var(--green-forest);
-    padding: 0.3em 1em;
-    border-radius: 100px;
-    font-size: 15px;
-    display: inline-flex;
-    margin-bottom: 1em;
+    margin-right: 5rem;
 }
 
 .hero h1 {
@@ -166,16 +162,6 @@ nav {
     background-color: var(--accent);
     color: var(--bg);
     padding: 1rem;
-    border-radius: 10px;
-    font-weight: 600;;
-    text-decoration: none;
-}
-
-.btn-ghost {
-    color: var(--accent);
-    border:1px solid var(--accent);
-    padding: 1rem;
-    border-radius: 10px;
 }
 
 /* Zone intervention */
@@ -645,12 +631,14 @@ nav {
     }
 
     .hero-img-1 {
-        width: 100px;
+        width: 200px;
+        margin-right: 3rem;
     }
 
     .hero-img-2 {
         width: 100%;
         margin-top: 1rem;
+        margin-right: 0rem;
     }
 
     .hero-tag {
