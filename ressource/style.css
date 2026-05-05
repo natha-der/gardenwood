@@ -619,42 +619,35 @@ nav {
 
         /* HERO MOBILE */
     .hero-inner {
-        flex-direction: column;
-    }
-
-    .hero-content {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    flex-direction: column;
     }
 
     .hero-image {
         flex-direction: column;
-        align-items: center;
         width: 100%;
     }
 
     .hero-img-1 {
-        width: 80px;
+        width: 120px;
         height: auto;
+        margin-top: 0;
+        object-fit: contain;
+        align-self: flex-start;
         transform: none;
-        order: -1;
-        position: absolute;
-        top: 1rem;
-        right: 8rem;
     }
 
     .hero-img-2 {
         width: 100%;
         height: 220px;
+        margin-top: 1rem;
         object-fit: cover;
         transform: none;
-        border-radius: 12px;
-        margin-top: 1.5rem;
     }
 
     .hero-tag {
-        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
-    
+        
 }
