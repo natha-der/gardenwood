@@ -596,17 +596,6 @@ nav {
         max-width: 100%;
     }
 
-    /* FORMULAIRE CONTACT */
-    .avis-form-section {
-        text-align: center;
-    }
-
-    .avis-form input,
-    .avis-form textarea,
-    .avis-form select {
-        width: 100%;
-    }
-
         /* CONTACT */
     .inner-contact {
         flex-direction: column;
