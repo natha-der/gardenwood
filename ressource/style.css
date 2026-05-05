@@ -587,4 +587,45 @@ nav {
         z-index: 100;
     }
 
+        /* AVIS */
+    .avis-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .avis-form {
+        max-width: 100%;
+    }
+
+    /* FORMULAIRE CONTACT */
+    .avis-form-section {
+        text-align: center;
+    }
+
+    .avis-form input,
+    .avis-form textarea,
+    .avis-form select {
+        width: 100%;
+    }
+
+        /* CONTACT */
+    .inner-contact {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-link {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
 }
