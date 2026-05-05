@@ -642,7 +642,7 @@ nav {
     }
 
     .hero-tag {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         gap: 10px;
         margin-left: 0rem;
