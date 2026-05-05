@@ -628,13 +628,11 @@ nav {
     }
 
     .hero-img-1 {
-        width: 120px;
-        height: auto;
-        margin-top: 0;
-        object-fit: contain;
-        align-self: flex-start;
-        transform: none;
-    }
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-top: 0;
+}
 
     .hero-img-2 {
         width: 100%;
