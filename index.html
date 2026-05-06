@@ -26,15 +26,15 @@
     <section class="hero">
         <div class="hero-inner">
             <div class="hero-top">
-                <div class="hero-tag">Artisan local</div>
-                <img src="ressource/image/logo_gardenwood.JPEG" class="hero-img-1" alt="logo">
+                <div class="hero-tag">Artisan local de l'espace extérieur</div>
+                <img src="ressource/image/logo_gardenwood.png" class="hero-img-1" alt="logo">
             </div>
             <div class="hero-bottom">
                 <div class="hero-content">
                     <h1>Votre extérieur,<br>
                         <span class="hero-accent">entretenu et aménagé.</span>
                     </h1>
-                    <p>Entretien d'espace vert, bricolage, aménagement d'un espace convivial - j'interviens chez vous avec soin et professionnalisme.</p>
+                    <p>Entretien d'espace vert, bricolage, aménagement d'un espace convivial, entretien de résidence secondaire - j'interviens chez vous avec soin et professionnalisme.</p>
                     <div class="hero-btns">
                         <a class="btn-ghost">Voir mes réalisations</a>
                     </div>
@@ -52,30 +52,33 @@
     <section class="services" id="services">
         <p class="section-label">CE QUE JE FAIS</p>
         <h2>Mes prestations</h2>
+        <p class="section-label">Pour découvrir les préstation cliquez sur la catégorie qui vous intéressent !</p>
+
         <div class="services-grid">
 
-            <div class="scard">
+            <a href="espaces-verts.html" class="scard">
                 <div class="scard-icon">🌿</div>
                 <h3>Entretien espace vert</h3>
                 <p>Tonte, taille, débrousaillage</p>
-            </div>
+            </a>
 
-            <div class="scard">
+            <a href="" class="scard">
                 <div class="scard-icon">🔨</div>
                 <h3>Bricolage & Réparations</h3>
                 <p>Petits travaux, montage, réparations</p>
-            </div>
+            </a>
 
-            <div class="scard">
+            <a href="" class="scard">
                 <div class="scard-icon">🛋️</div>
                 <h3>Aménagement extérieur</h3>
                 <p>Coins cocooning, terrasse, mobilier</p>
-            </div>
-            <div class="scard">
+            </a>
+
+            <a href="" class="scard">
                 <div class="scard-icon">✨</div>
                 <h3>Autres services</h3>
                 <p>Pour toute autres demande n'hesitez pas a me contacter !</p>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -154,13 +157,14 @@
                     <i class="fa-solid fa-phone"></i> Me contacter par téléphone
                 </a>
             </div>
-            <div class="contact-form">
-                <input type="text" placeholder="Votre nom">
-                <input type="tel" placeholder="Votre téléphone">
-                <input type="text" placeholder="Type de prestation">
-                <textarea placeholder="Votre message..."></textarea>
-                <button>Envoyer ma demande</button>
-            </div>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5e7f50ac-89d0-419e-948c-0b74bc093e46">
+                <input type="text" name="nom" placeholder="Votre nom" required>
+                <input type="tel" name="telephone" placeholder="Votre téléphone" required>
+                <input type="text" name="prestation" placeholder="Type de prestation">
+                <textarea name="message" placeholder="Votre message..."></textarea>
+                <button type="submit">Envoyer ma demande</button>
+            </form>
         </div>
     </section>
 
