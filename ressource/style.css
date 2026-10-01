@@ -185,3 +185,12 @@ nav { position:fixed; top:0; left:0; right:0; z-index:50; display:flex; align-it
     .avis-header { padding:110px 1.2rem 2rem; }
     .avis-header h1, .mentions h1 { font-size:2.1rem; }
 }
+
+/* FORMULAIRES MOBILE */
+@media (max-width:768px) {
+    .contact .contact-form, .avis-form-section .avis-form { width:100%; max-width:none; gap:14px; }
+    .contact .contact-form input, .contact .contact-form textarea,
+    .avis-form-section .avis-form input, .avis-form-section .avis-form select, .avis-form-section .avis-form textarea { font-size:1.05rem; padding:1.15rem 1.2rem; min-height:58px; }
+    .contact .contact-form textarea, .avis-form-section .avis-form textarea { min-height:200px; }
+    .contact .contact-form button, .avis-form-section .avis-form button { padding:1.2rem; font-size:1.1rem; }
+}
