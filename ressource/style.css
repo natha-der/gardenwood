@@ -107,8 +107,12 @@ nav { position:fixed; top:0; left:0; right:0; z-index:50; display:flex; align-it
     .hero h1 .script { font-size:2.8rem; }
     .band-black { font-size:1.3rem; }
     .band-green { width:100%; }
-    .hero-photos { flex-direction:row; }
-    .photo { min-height:110px; clip-path:polygon(10% 0,100% 0,90% 100%,0 100%); }
+    .hero-photos { display:grid; grid-template-columns:1fr 1fr; gap:.5rem; }
+    .photo { min-height:140px; clip-path:none; background-position:center; }
+    .photo:first-child { grid-column:1 / -1; min-height:240px; background-position:center 35%; clip-path:polygon(0 0,100% 0,100% 94%,0 100%); }
+    .contact-form input, .contact-form textarea, .avis-form input, .avis-form select, .avis-form textarea { font-size:1rem; padding:1rem 1.1rem; }
+    .contact-form textarea, .avis-form textarea { min-height:170px; }
+    .contact-form button, .avis-form button { padding:1.1rem; font-size:1.05rem; }
     .zone-bar { padding:1.2rem; gap:1.2rem; flex-direction:column; text-align:center; }
     .zone-phone { font-size:1.6rem; }
     .services, .temoignages, .faq, .contact { padding:2.5rem 1.2rem; }
