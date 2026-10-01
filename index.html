@@ -4,18 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Garden Wood</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito+Sans:wght@400;600;700&family=Playfair+Display:wght@800;900&display=swap" rel="stylesheet">
 <link href="ressource/style.css" rel="stylesheet">
-<script src="ressource/script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav>
-        <a href="#" class="nav-logo">Garden Wood</a>
-        <button class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <p class="nav-logo">Garden Wood</p>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
         <ul class="nav-links">
             <li><a href="#services">Mes prestations</a></li>
             <li><a href="#temoignages">Avis client</a></li>
@@ -23,144 +20,92 @@
         </ul>
     </nav>
 
-    <section class="hero" style="background-image: url(ressource/image/image_zone_hero.webp);">
-        <div class="hero-inner">
-            <div class="hero-top">
-                <div class="hero-tag">Artisan local de l'espace extérieur</div>
-                <img src="ressource/image/logo_gardenwood.png" class="hero-img-1" alt="logo">
-            </div>
-            <div class="hero-bottom">
-                <div class="hero-content">
-                    <h1>Votre extérieur,<br>
-                        <span class="hero-accent">entretenu et aménagé.</span>
-                    </h1>
-                    <p>Entretien d'espace vert, bricolage, aménagement d'un espace convivial, entretien de résidence secondaire - nous intervenons chez vous avec soin et professionnalisme.</p>
-                    <div class="hero-btns">
-                        <!--<a class="btn-ghost">Voir mes réalisations</a>-->
-                    </div>
-                </div>
-            </div>
+    <section class="hero">
+        <div class="hero-text">
+            <img src="ressource/image/logo_gardenwood.png" class="hero-logo" alt="Logo Garden Wood">
+            <h1>Entretien <span class="script">extérieur</span></h1>
+            <p class="band-black">Je recherche des chantiers !</p>
+            <p class="band-green">Pour des extérieurs propres, entretenus et agréables toute l'année !</p>
+            <p class="hero-desc">Entretien d'espace vert, bricolage, aménagement d'un espace convivial, entretien de résidence secondaire : j'interviens chez vous avec soin et professionnalisme.</p>
+        </div>
+        <div class="hero-photos">
+            <div class="photo" style="background-image:url(ressource/image/image_zone_hero.webp)"></div>
+            <div class="photo" style="background-image:url(ressource/image/photo-haies.webp)"></div>
+            <div class="photo" style="background-image:url(ressource/image/photo-tronconnage.webp)"></div>
         </div>
     </section>
 
     <div class="zone-bar">
-        <span class="zone-dot"></span>
-        <p> Zone d'intervention : <strong>Caen et ses alentours. Nogent le Rotrou et 30km autours.</strong></p>
+        <div class="zone-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Zone d'intervention :<br><strong>Caen et ses alentours. Nogent-le-Rotrou et 30 km autour.</strong></p>
+        </div>
+        <a href="tel:+33762190518" class="zone-phone"><i class="fa-solid fa-phone"></i> 07 62 19 05 18</a>
+        <span class="badge">Devis<br>gratuit</span>
     </div>
 
     <section class="services" id="services">
-        <p class="section-label">CE QUE NOUS FAISONS</p>
-        <h2>Nos prestations</h2>
-        <p class="section-label">Pour découvrir les préstation cliquez sur la catégorie qui vous intéressent !</p>
-
+        <h2>Mes <span class="script">prestations</span></h2>
+        <p class="section-label">Cliquez sur la catégorie qui vous intéresse.</p>
         <div class="services-grid">
-
             <a href="espaces-verts.html" class="scard">
-                <div class="scard-icon">🌿</div>
-                <h3>Entretien espace vert</h3>
-                <p>Tonte, taille, débrousaillage</p>
+                <div class="scard-icon"><i class="fa-solid fa-leaf"></i></div>
+                <div><h3>Entretien espace vert</h3><p>Tonte, taille, débroussaillage</p></div>
             </a>
-
             <a href="bricolage.html" class="scard">
-                <div class="scard-icon">🔨</div>
-                <h3>Bricolage & Réparations</h3>
-                <p>Petits travaux, montage, réparations</p>
+                <div class="scard-icon"><i class="fa-solid fa-hammer"></i></div>
+                <div><h3>Bricolage &amp; réparations</h3><p>Petits travaux, montage, réparations</p></div>
             </a>
-
             <a href="amenagement.html" class="scard">
-                <div class="scard-icon">🛋️</div>
-                <h3>Aménagement extérieur</h3>
-                <p>Coins cocooning, terrasse, mobilier</p>
+                <div class="scard-icon"><i class="fa-solid fa-couch"></i></div>
+                <div><h3>Aménagement extérieur</h3><p>Coins cocooning, terrasse, mobilier</p></div>
             </a>
-
             <a href="#contact" class="scard scard-contact">
-                <div class="scard-icon">✨</div>
-                <h3>Autres services</h3>
-                <p>Pour toute autres demande n'hesitez pas à nous contacter !</p>
+                <div class="scard-icon"><i class="fa-solid fa-star"></i></div>
+                <div><h3>Autres services</h3><p>Pour toute autre demande, n'hésitez pas à me contacter !</p></div>
             </a>
         </div>
+        <p class="slogan script">Travail sérieux, soigné et tarifs raisonnables !</p>
     </section>
 
-
     <div class="stats">
-        <div class="stat">
-            <span class="stat-num">+50</span>
-            <span class="stat-lbl">clients</span>
-        </div>
-        <div class="stat">
-            <span class="stat-num">24h</span>
-            <span class="stat-lbl">Reponse</span>
-        </div>
-        <div class="stat">
-            <span class="stat-num">30km</span>
-            <span class="stat-lbl">Zone d'intervention</span>
-        </div>
+        <div class="stat"><span class="stat-num">+50</span><span class="stat-lbl">clients</span></div>
+        <div class="stat"><span class="stat-num">24h</span><span class="stat-lbl">réponse</span></div>
+        <div class="stat"><span class="stat-num">30 km</span><span class="stat-lbl">zone d'intervention</span></div>
     </div>
 
     <section class="temoignages" id="temoignages">
-        <p class="section-label">Ils nous font confiance</p>
-        <h2>Avis Clients</h2>
+        <h2>Avis <span class="script">clients</span></h2>
         <div class="temo-grid">
-            <div class="temo">
-                <div class="stars">★★★★★</div>
-                <p>Travail rapide et soigné, mon jardin est meconnaissable. Je recommande !</p>
-                <span class="temo-author">Jean Paul -- Caen</span>
-            </div>
-            <div class="temo">
-                <div class="stars">★★★★★</div>
-                <p>Travail rapide et soigné, mon jardin est meconnaissable. Je recommande !</p>
-                <span class="temo-author">Jean Paul -- Caen</span>
-            </div>
-            <div class="temo">
-                <div class="stars">★★★★★</div>
-                <p>Travail rapide et soigné, mon jardin est meconnaissable. Je recommande !</p>
-                <span class="temo-author">Jean Paul -- Caen</span>
-            </div>
+            <div class="temo"><div class="stars">★★★★★</div><p>Travail rapide et soigné, mon jardin est méconnaissable. Je recommande !</p><span class="temo-author">Jean Paul, Caen</span></div>
+            <div class="temo"><div class="stars">★★★★★</div><p>Travail rapide et soigné, mon jardin est méconnaissable. Je recommande !</p><span class="temo-author">Jean Paul, Caen</span></div>
+            <div class="temo"><div class="stars">★★★★★</div><p>Travail rapide et soigné, mon jardin est méconnaissable. Je recommande !</p><span class="temo-author">Jean Paul, Caen</span></div>
         </div>
-        <a href="page-avis.html" class="btn-ghost">Avis client</a>
+        <a href="page-avis.html" class="btn-ghost">Voir tous les avis</a>
     </section>
 
     <section class="faq">
-        <p class="section-label">Questions fréquentes</p>
-        <h2>FAQ</h2>
+        <h2>Questions <span class="script">fréquentes</span></h2>
         <div class="faq-list">
-            <div class="faq-item">
-                <span>Quelle est votre zone d'intervention ?</span>
-                <span class="faq-answer">Nous intervenos sur plusieurs zone, notamment Caen et ses alentours</span>
-                <span class="faq-arrow">+</span>
-            </div>
-            <div class="faq-item">
-                <span>Êtes-vous assuré en responsabilité civile professionnelle ?</span>
-                <span class="faq-answer">Oui totalement, nous sommes assuré pour toute les situations</span>
-                <span class="faq-arrow">+</span>
-            </div>
-            <div class="faq-item">
-                <span>Proposez-vous des contrats d'entretien annuels ?</span>
-                <span class="faq-answer">Evidemment, et les formules peuvent être adapté en fonction des périodes de l'année</span>
-                <span class="faq-arrow">+</span>
-            </div>
+            <div class="faq-item"><span>Quelle est votre zone d'intervention ?</span><span class="faq-answer">Nous intervenons sur plusieurs zones, notamment Caen et ses alentours.</span><span class="faq-arrow">+</span></div>
+            <div class="faq-item"><span>Êtes-vous assuré en responsabilité civile professionnelle ?</span><span class="faq-answer">Oui, nous sommes assurés pour toutes les situations.</span><span class="faq-arrow">+</span></div>
+            <div class="faq-item"><span>Proposez-vous des contrats d'entretien annuels ?</span><span class="faq-answer">Évidemment, et les formules peuvent être adaptées selon les périodes de l'année.</span><span class="faq-arrow">+</span></div>
         </div>
     </section>
-
 
     <section class="contact" id="contact">
         <div class="inner-contact">
             <div class="contact-info">
-                <p class="section-label">Travaillons ensemble</p>
-                <h2>Nous contacter</h2>
-                <p>Besoin d'une prestation sur votre domicile, Contacter moi et je vous répond en 24h.</p>
-                <a href="mailto:lamiraultP@email.com" class="contact-link">
-                    <i class="fa-solid fa-envelope"></i> Nous contacter par mail
-                </a><br>
-                <a href="tel:+33762190518" class="contact-link">
-                    <i class="fa-solid fa-phone"></i> Nous contacter par téléphone
-                </a>
+                <h2>Nous <span class="script">contacter</span></h2>
+                <p>Besoin d'une prestation à votre domicile ? Contactez-moi, je vous réponds sous 24 h.</p>
+                <a href="mailto:lamiraultp@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i> Me contacter par mail</a>
+                <a href="tel:+33762190518" class="contact-link"><i class="fa-solid fa-phone"></i> Me contacter par téléphone</a>
             </div>
             <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="5e7f50ac-89d0-419e-948c-0b74bc093e46">
                 <input type="text" name="nom" placeholder="Votre nom" required>
                 <input type="tel" name="telephone" placeholder="Votre téléphone" required>
-                <input type="mailto" name="mail" placeholder="Votre mail" required>
+                <input type="email" name="mail" placeholder="Votre mail" required>
                 <input type="text" name="prestation" placeholder="Type de prestation">
                 <textarea name="message" placeholder="Votre message..."></textarea>
                 <button type="submit">Envoyer ma demande</button>
@@ -168,11 +113,14 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <span>© 2026 Garden Wood, auto-entrepreneur</span>
+        <div class="footer-links">
+            <a href="mentions-legales.html">Mentions légales</a>
+            <span>SIRET : à compléter</span>
+        </div>
+        <span class="footer-credit">Site réalisé par <a href="https://ndlstudio.fr/" target="_blank">NDL Studio</a></span>
+    </footer>
+    <script src="ressource/script.js"></script>
 </body>
-<footer class="footer">
-    <span>© 2026 Gardenn Wood — Auto-entrepreneur</span>
-    <div class="footer-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="#">SIRET</a>
-    </div>
-</footer>
+</html>

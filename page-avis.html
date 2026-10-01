@@ -3,19 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Site Pierre</title>
+<title>Garden Wood | Tous les avis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito+Sans:wght@400;600;700&family=Playfair+Display:wght@800;900&display=swap" rel="stylesheet">
 <link href="ressource/style.css" rel="stylesheet">
-<script src="ressource/script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav>
-        <a href="#" class="nav-logo">Garden Wood</a>
-        <button class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <a href="index.html" class="nav-logo">Garden Wood</a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
         <ul class="nav-links">
             <li><a href="index.html">Retour au site</a></li>
             <li><a href="#laisser-avis" class="nav-cta">Laisser un avis</a></li>
@@ -23,45 +20,18 @@
     </nav>
 
     <section class="avis-header">
-        <p class="section-label">Ce que disent nos client</p>
-        <h1>Tous les avis</h1>
-        <p>Découvrez les retours de nos clients</p>
-        <p>Les avis sont mis à jours chaque semaine !</p>
+        <h1>Tous les <span class="script">avis</span></h1>
+        <p>Découvrez les retours de mes clients. Les avis sont mis à jour chaque semaine.</p>
     </section>
 
     <section class="avis-section">
         <div class="avis-grid">
-            <div class="temo">
-                <div class="stars">★★★★★</div>
-                <p>Travail rapide et soigné, mon jardin est meconnaissable. Je recommande !</p>
-                <span class="temo-author">Jean Paul -- Caen</span>
-            </div>
-            <div class="temo">
-                <div class="stars">★★★★★</div>
-                <p>Travail rapide et soigné, mon jardin est meconnaissable. Je recommande !</p>
-                <span class="temo-author">Jean Paul -- Caen</span>
-            </div>
-            <div class="temo">
-                <div class="stars">★★★★★</div>
-                <p>Travail rapide et soigné, mon jardin est meconnaissable. Je recommande !</p>
-                <span class="temo-author">Jean Paul -- Caen</span>
-            </div>
-            <div class="temo">
-                <div class="stars">★★★★★</div>
-                <p>Travail rapide et soigné, mon jardin est meconnaissable. Je recommande !</p>
-                <span class="temo-author">Jean Paul -- Caen</span>
-            </div>
-            <div class="temo">
-                <div class="stars">★★★★★</div>
-                <p>Travail rapide et soigné, mon jardin est meconnaissable. Je recommande !</p>
-                <span class="temo-author">Jean Paul -- Caen</span>
-            </div>
+            <div class="temo"><div class="stars">★★★★★</div><p>Travail rapide et soigné, mon jardin est méconnaissable. Je recommande !</p><span class="temo-author">Jean Paul, Caen</span></div><div class="temo"><div class="stars">★★★★★</div><p>Travail rapide et soigné, mon jardin est méconnaissable. Je recommande !</p><span class="temo-author">Jean Paul, Caen</span></div><div class="temo"><div class="stars">★★★★★</div><p>Travail rapide et soigné, mon jardin est méconnaissable. Je recommande !</p><span class="temo-author">Jean Paul, Caen</span></div><div class="temo"><div class="stars">★★★★★</div><p>Travail rapide et soigné, mon jardin est méconnaissable. Je recommande !</p><span class="temo-author">Jean Paul, Caen</span></div><div class="temo"><div class="stars">★★★★★</div><p>Travail rapide et soigné, mon jardin est méconnaissable. Je recommande !</p><span class="temo-author">Jean Paul, Caen</span></div>
         </div>
     </section>
 
     <section class="avis-form-section" id="laisser-avis">
-        <p class="section-label">Votre expérience</p>
-        <h2>Laisser un avis</h2>
+        <h2>Laisser un <span class="script">avis</span></h2>
         <form class="avis-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="5e7f50ac-89d0-419e-948c-0b74bc093e46">
             <input type="text" name="nom" placeholder="Votre nom et prénom">
@@ -78,12 +48,11 @@
         </form>
     </section>
 
+    <footer class="footer">
+        <span>© 2026 Garden Wood, auto-entrepreneur</span>
+        <div class="footer-links"><a href="mentions-legales.html">Mentions légales</a><span>SIRET : à compléter</span></div>
+        <span class="footer-credit">Site réalisé par <a href="https://ndlstudio.fr/" target="_blank">NDL Studio</a></span>
+    </footer>
+    <script src="ressource/script.js"></script>
 </body>
-
-<footer class="footer">
-    <span>© 2026 Gardenn Wood — Auto-entrepreneur</span>
-    <div class="footer-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-        <span>SIRET : A completer</span>
-    </div>
-</footer>
+</html>
